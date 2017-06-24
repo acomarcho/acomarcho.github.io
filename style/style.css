@@ -137,3 +137,17 @@ footer {
     color: white;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    header #webtitle,
+    header nav,
+    header nav li,
+    #shortinfo,
+    #boxes .box,
+    #projboxes,
+    footer {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
