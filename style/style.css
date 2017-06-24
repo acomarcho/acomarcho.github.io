@@ -89,7 +89,7 @@ header a:hover {
     float: left;
     width: 30%;
     text-align: center;
-    padding: 0px;
+    padding: 10px;
 }
 
 #boxes h3 {
@@ -149,5 +149,8 @@ footer {
         float: none;
         text-align: center;
         width: 100%;
+    }
+    #boxes .box {
+        padding: 0;
     }
 }
