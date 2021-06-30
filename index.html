@@ -1,107 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>aco's Site</title>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">acomarcho</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#links">Useful Links</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#contacts">Contact</a>
-            </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Marcho's Site</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="header-img-container">
+          <img
+            src="./images/profpic.jpg"
+            alt=""
+            class="header-img slide-left"
+          />
         </div>
-    </nav>
+        <div class="header-info">
+          <h1 class="slide-left">Marchotridyo</h1>
+          <h3 class="slide-right">Informatics Student</h3>
+          <p class="grow">
+            I'm Marcho, an undergraduate student currently studying at STEI ITB,
+            majoring in Informatics. A passionate learner in many different
+            subjects.
+          </p>
+        </div>
+      </div>
+    </header>
 
-    <!-- Heading -->
-    <div class="heading-container" id="home">
-        <div class="left">
-            <p>Hello, I'm Marcho.</p>
-            <p>An undergraduate currently studying at STEI ITB.</p>
-        </div>
-        <div class="right">
-            <img src="images/vector-1.svg">
-        </div>
-        <!-- <img class="curve-1" src="curve-1.svg"> -->
-    </div>
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <h1>My <span>Works</span></h1>
+      <p class="portfolio-header-p">
+        Klik kartu untuk membuka tautan di <em>tab </em> baru.
+      </p>
+      <div class="portfolio-container">
+        <a
+          href="https://twitter.com/acoxstpd/status/1252109898063556608"
+          class="portfolio-card"
+          target="_blank"
+        >
+          <img src="./images/portfolio-1.jpg" alt="" class="portfolio-img" />
+          <h3>Kitab Numerik</h3>
+          <p>
+            Bank soal kuantitatif dari SAT, GRE, NTSE, dan GCSE. disusun per
+            bab.
+          </p>
+        </a>
+        <a
+          href="https://twitter.com/acoxstpd/status/1282195441556140033"
+          class="portfolio-card"
+          target="_blank"
+        >
+          <img src="./images/portfolio-2.jpg" alt="" class="portfolio-img" />
+          <h3>acoSIMAK</h3>
+          <p>Pembahasan SIMAK UI, disusun per mata pelajaran dan per bab.</p>
+        </a>
+        <a
+          href="https://acomarcho.github.io/kataBaku"
+          class="portfolio-card"
+          target="_blank"
+        >
+          <img src="./images/portfolio-3.jpg" alt="" class="portfolio-img" />
+          <h3>kataBaku</h3>
+          <p>Situs bermain untuk menghafal kata baku bahasa Indonesia.</p>
+        </a>
+        <a
+          href="https://twitter.com/acoxstpd/status/1269833700008554496"
+          class="portfolio-card"
+          target="_blank"
+        >
+          <img src="./images/portfolio-4.jpg" alt="" class="portfolio-img" />
+          <h3>Kuantitatif Ala UTBK</h3>
+          <p>
+            Soal pengayaan kuantitatif yang disusun mirip dengan soal UTBK 2019.
+            Pembahasan tersedia di YouTube (tekan ikon YouTube di bagian kaki
+            situs).
+          </p>
+        </a>
+        <a
+          href="https://acomarcho.github.io/pomodoro"
+          class="portfolio-card"
+          target="_blank"
+        >
+          <img src="./images/portfolio-5.jpg" alt="" class="portfolio-img" />
+          <h3>Pomodoro</h3>
+          <p>
+            Aplikasi pomodoro timer minimalis. Tersedia dalam bentuk executable .exe pada repositori GitHubnya.
+          </p>
+        </a>
+      </div>
+    </section>
 
-    <!-- Wave Break -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6c63ff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-
-    <!-- Useful Links -->
-    <div class="links-container" id="links">
-        <div class="title">
-            <h1>Useful Links</h1>
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
         </div>
-        <div class="cards">
-            <div class="card">
-                <h1>Kitab Numerik</h1>
-                <a href="https://twitter.com/acoxstpd/status/1252109898063556608" target="_blank"><img src="images/link.svg"></a>
-            </div>
-            <div class="card">
-                <h1>acoSIMAK</h1>
-                <a href="https://twitter.com/acoxstpd/status/1282195441556140033" target="_blank"><img src="images/link.svg"></a>
-            </div>
-            <div class="card">
-                <h1>kataBaku</h1>
-                <a href="https://acomarcho.github.io/kataBaku" target="_blank"><img src="images/link.svg"></a>
-            </div>
-            <div class="card">
-                <h1>Kuantitatif Ala UTBK</h1>
-                <a href="https://twitter.com/acoxstpd/status/1269833700008554496" target="_blank"><img src="images/link.svg"></a>
-            </div>
-            <div class="card">
-                <h1>YouTube Pembahasan</h1>
-                <a href="https://www.youtube.com/channel/UCnWIF4KcdRkTUDvxDHlvYNg" target="_blank"><img src="images/link.svg"></a>
-            </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3 class="skill-name">CSS</h3>
         </div>
-        <div class="free-bottom"></div>
-    </div>
-
-    <!-- Wave Break -->
-    <div style="background-color: #2f2e41;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#6c63ff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,181.3C672,192,768,160,864,149.3C960,139,1056,149,1152,165.3C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-        </svg>
-    </div>
-
-    <!-- Contacts Container -->
-    <div class="contacts-container" id="contacts">
-        <div class="inner">
-            <h1>Contact Me</h1>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
         </div>
-        <div class="inner">
-            <a href="https://twitter.com/acoxstpd" target="_blank"><img src="images/twitter.svg"></a>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3 class="skill-name">Python</h3>
         </div>
-        <div class="inner">
-            <a href="https://www.instagram.com/acomarcho" target="_blank"><img src="images/instagram.svg"></a>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-figma"></i>
+          </div>
+          <h3 class="skill-name">Figma</h3>
         </div>
-        <div class="free-bottom"></div>
-        <div class="free-bottom"></div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>Made with ♥ by Marchotridyo</p>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="footer-icons">
+        <a
+          href="https://twitter.com/acoxstpd"
+          class="footer-icon"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCnWIF4KcdRkTUDvxDHlvYNg"
+          class="footer-icon"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://github.com/acomarcho"
+          class="footer-icon"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://id.linkedin.com/in/marchotridyo-2004bb1b4"
+          class="footer-icon"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="footer-text">
+        Made with <i class="fas fa-heart"></i> by Marchotridyo
+      </p>
+      <p class="footer-text">Images are taken from Pexels</p>
+    </footer>
+  </body>
 </html>
