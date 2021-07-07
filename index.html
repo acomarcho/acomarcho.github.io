@@ -3,171 +3,355 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=s, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+      href="./fontawesome-free-5.15.3-web/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Marcho's Site</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header id="header" class="header">
-      <div class="header-container">
-        <div class="header-img-container">
-          <img
-            src="./images/profpic.jpg"
-            alt=""
-            class="header-img slide-left"
-          />
+    <!-- NAVBAR START -->
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-header">
+          <h3>Marcho's Site</h3>
+          <button class="toggle-btn" type="button">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        <div class="header-info">
-          <h1 class="slide-left">Marchotridyo</h1>
-          <h3 class="slide-right">Informatics Student</h3>
-          <p class="grow">
-            I'm Marcho, an undergraduate student currently studying at STEI ITB,
-            majoring in Informatics. A passionate learner in many different
-            subjects.
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li class="projects-link">
+            <a>Projects</a>
+            <ul class="projects">
+              <li><a href="#noweb">Non-programming Projects</a></li>
+              <li><a href="#program">Programming Projects</a></li>
+            </ul>
+          </li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- SIDEBAR START -->
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <button class="close-btn" type="button">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#noweb">Non-Programming Projects</a></li>
+          <li><a href="#program">Programming Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- HEADER START -->
+    <header class="header" id="home">
+      <div class="header-container">
+        <div class="header-text">
+          <h3>Hello!</h3>
+          <h1>I'm Marcho,</h1>
+          <div class="underline"></div>
+          <p>
+            an undergraduate informatics student<br />at Institut Teknologi
+            Bandung.
           </p>
+        </div>
+        <div class="header-img">
+          <img src="./images/profpic.jpg" class="profile-img" alt="" />
         </div>
       </div>
     </header>
-
-    <!-- PORTFOLIO -->
-    <section class="portfolio" id="portfolio">
-      <h1>My <span>Works</span></h1>
-      <p class="portfolio-header-p">
-        Klik kartu untuk membuka tautan di <em>tab </em> baru.
-      </p>
-      <div class="portfolio-container">
-        <a
-          href="https://twitter.com/acoxstpd/status/1252109898063556608"
-          class="portfolio-card"
-          target="_blank"
-        >
-          <img src="./images/portfolio-1.jpg" alt="" class="portfolio-img" />
-          <h3>Kitab Numerik</h3>
-          <p>
-            Bank soal kuantitatif dari SAT, GRE, NTSE, dan GCSE. disusun per
-            bab.
-          </p>
-        </a>
-        <a
-          href="https://twitter.com/acoxstpd/status/1282195441556140033"
-          class="portfolio-card"
-          target="_blank"
-        >
-          <img src="./images/portfolio-2.jpg" alt="" class="portfolio-img" />
-          <h3>acoSIMAK</h3>
-          <p>Pembahasan SIMAK UI, disusun per mata pelajaran dan per bab.</p>
-        </a>
-        <a
-          href="https://acomarcho.github.io/kataBaku"
-          class="portfolio-card"
-          target="_blank"
-        >
-          <img src="./images/portfolio-3.jpg" alt="" class="portfolio-img" />
-          <h3>kataBaku</h3>
-          <p>Situs bermain untuk menghafal kata baku bahasa Indonesia.</p>
-        </a>
-        <a
-          href="https://twitter.com/acoxstpd/status/1269833700008554496"
-          class="portfolio-card"
-          target="_blank"
-        >
-          <img src="./images/portfolio-4.jpg" alt="" class="portfolio-img" />
-          <h3>Kuantitatif Ala UTBK</h3>
-          <p>
-            Soal pengayaan kuantitatif yang disusun mirip dengan soal UTBK 2019.
-            Pembahasan tersedia di YouTube (tekan ikon YouTube di bagian kaki
-            situs).
-          </p>
-        </a>
-        <a
-          href="https://acomarcho.github.io/pomodoro"
-          class="portfolio-card"
-          target="_blank"
-        >
-          <img src="./images/portfolio-5.jpg" alt="" class="portfolio-img" />
-          <h3>Pomodoro</h3>
-          <p>
-            Aplikasi pomodoro timer minimalis. Tersedia dalam bentuk executable .exe pada repositori GitHubnya.
-          </p>
-        </a>
+    <!-- HEADER END -->
+    <!-- NOWEB START -->
+    <section class="noweb" id="noweb">
+      <div class="noweb-container">
+        <div class="section-title">
+          <h1>Non-Programming Projects</h1>
+          <p>Klik icon pada bagian kiri kaki kartu untuk membuka link.</p>
+          <div class="underline"></div>
+        </div>
+        <div class="noweb-card-container">
+          <!-- NON-WEB CARD START -->
+          <div class="noweb-card">
+            <h2>Kitab Numerik</h2>
+            <div class="underline"></div>
+            <br />
+            <i class="fas fa-calculator card-icon"></i>
+            <p>
+              Bank soal kuantitatif dari SAT, GRE, NTSE, dan GCSE. Disusun per
+              bab.
+            </p>
+            <div class="noweb-card-footer">
+              <div class="noweb-card-links">
+                <a
+                  href="https://twitter.com/acoxstpd/status/1252109898063556608"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+              <div class="noweb-card-info">
+                <i class="fas fa-square-root-alt"></i>
+              </div>
+            </div>
+          </div>
+          <!-- NON-WEB CARD END -->
+          <!-- NON-WEB CARD START -->
+          <div class="noweb-card">
+            <h2>acoSIMAK</h2>
+            <div class="underline"></div>
+            <br />
+            <i class="fas fa-brain card-icon"></i>
+            <p>Pembahasan SIMAK UI, disusun per mata pelajaran dan per bab.</p>
+            <div class="noweb-card-footer">
+              <div class="noweb-card-links">
+                <a
+                  href="https://twitter.com/acoxstpd/status/1282195441556140033"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+              <div class="noweb-card-info">
+                <i class="fas fa-square-root-alt"></i>
+                <i class="fas fa-rocket"></i>
+                <i class="fas fa-flask"></i>
+              </div>
+            </div>
+          </div>
+          <!-- NON-WEB CARD END -->
+          <!-- NON-WEB CARD START -->
+          <div class="noweb-card">
+            <h2>Kuantitatif Ala UTBK</h2>
+            <div class="underline"></div>
+            <br />
+            <i class="fas fa-infinity card-icon"></i>
+            <p>
+              Soal pengayaan kuantitatif yang disusun mirip dengan soal UTBK
+              2019.
+            </p>
+            <div class="noweb-card-footer">
+              <div class="noweb-card-links">
+                <a
+                  href="https://twitter.com/acoxstpd/status/1269833700008554496"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCnWIF4KcdRkTUDvxDHlvYNg"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+              <div class="noweb-card-info">
+                <i class="fas fa-square-root-alt"></i>
+              </div>
+            </div>
+          </div>
+          <!-- NON-WEB CARD END -->
+        </div>
       </div>
     </section>
-
+    <!-- NOWEB END -->
+    <!-- PROGRAMMING PROJECTS START -->
+    <section class="program" id="program">
+      <div class="program-container">
+        <div class="section-title">
+          <h1>Programming Projects</h1>
+          <p>
+            Source code atau executable (bila ada) dapat diakses melalui icon
+            pada bagian kaki kartu.
+          </p>
+          <div class="underline"></div>
+        </div>
+        <div class="program-card-container">
+          <!-- START OF PROGRAM CARD -->
+          <div class="program-card">
+            <h2>kataBaku</h2>
+            <div class="program-icon">
+              <i class="fas fa-file-word"></i>
+            </div>
+            <p>Situs bermain untuk menghafal kata baku bahasa Indonesia.</p>
+            <a
+              href="https://acomarcho.github.io/kataBaku"
+              target="_blank"
+              class="program-btn"
+              >Visit project</a
+            >
+            <div class="program-card-footer">
+              <div class="program-card-links">
+                <a href="https://github.com/acomarcho/kataBaku" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+              <div class="program-card-info">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROGRAM CARD -->
+          <!-- START OF PROGRAM CARD -->
+          <div class="program-card">
+            <h2>pomodoro</h2>
+            <div class="program-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <p>Aplikasi pomodoro timer minimalis.</p>
+            <a
+              href="https://acomarcho.github.io/pomodoro"
+              target="_blank"
+              class="program-btn"
+              >Visit project</a
+            >
+            <div class="program-card-footer">
+              <div class="program-card-links">
+                <a href="https://github.com/acomarcho/pomodoro" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://github.com/acomarcho/pomodoro/releases/tag/1.1"
+                  target="_blank"
+                  ><i class="fab fa-windows"></i
+                ></a>
+              </div>
+              <div class="program-card-info">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROGRAM CARD -->
+          <!-- START OF PROGRAM CARD -->
+          <div class="program-card">
+            <h2>dailies</h2>
+            <div class="program-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <p>To-do list untuk pekerjaan sehari-hari.</p>
+            <a
+              href="https://acomarcho.github.io/dailies"
+              target="_blank"
+              class="program-btn"
+              >Visit project</a
+            >
+            <div class="program-card-footer">
+              <div class="program-card-links">
+                <a href="https://github.com/acomarcho/dailies" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://github.com/acomarcho/dailies/releases/tag/v1.0"
+                  target="_blank"
+                  ><i class="fab fa-windows"></i
+                ></a>
+              </div>
+              <div class="program-card-info">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROGRAM CARD -->
+        </div>
+      </div>
+    </section>
+    <!-- PROGRAMMING PROJECTS END -->
     <!-- SKILLS -->
     <section class="skills" id="skills">
-      <h1>Skills</h1>
-      <div class="skills-container">
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-html5"></i>
-          </div>
-          <h3 class="skill-name">HTML5</h3>
+      <div class="skills-section">
+        <div class="section-title">
+          <h1>Skills and Technologies</h1>
+          <div class="underline"></div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-css3-alt"></i>
+        <h1 class="skill-subheading">Programming related</h1>
+        <div class="skills-container">
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h2>HTML5</h2>
           </div>
-          <h3 class="skill-name">CSS</h3>
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h2>CSS3</h2>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h2>Javascript</h2>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h2>Python</h2>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fab fa-figma"></i>
+            </div>
+            <h2>Figma</h2>
+          </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-js"></i>
+        <div class="underline"></div>
+        <h1 class="skill-subheading">Tutoring related</h1>
+        <div class="skills-container">
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fas fa-square-root-alt"></i>
+            </div>
+            <h2>Mathematics</h2>
           </div>
-          <h3 class="skill-name">JavaScript</h3>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-python"></i>
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h2>Physics</h2>
           </div>
-          <h3 class="skill-name">Python</h3>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-figma"></i>
+          <div class="skill">
+            <div class="skill-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h2>Chemistry</h2>
           </div>
-          <h3 class="skill-name">Figma</h3>
         </div>
       </div>
     </section>
-
+    <!-- END OF SKILLS -->
     <!-- FOOTER -->
-    <footer class="footer" id="footer">
-      <div class="footer-icons">
-        <a
-          href="https://twitter.com/acoxstpd"
-          class="footer-icon"
-          target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/channel/UCnWIF4KcdRkTUDvxDHlvYNg"
-          class="footer-icon"
-          target="_blank"
-          ><i class="fab fa-youtube"></i
-        ></a>
-        <a
-          href="https://github.com/acomarcho"
-          class="footer-icon"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://id.linkedin.com/in/marchotridyo-2004bb1b4"
-          class="footer-icon"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-icons">
+          <a href="https://twitter.com/marchoronavirus"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/acomarcho"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://id.linkedin.com/in/marchotridyo-2004bb1b4"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <h3>Made with <i class="fas fa-heart"></i> by Marchotridyo</h3>
       </div>
-      <p class="footer-text">
-        Made with <i class="fas fa-heart"></i> by Marchotridyo
-      </p>
-      <p class="footer-text">Images are taken from Pexels</p>
     </footer>
+    <!-- END OF FOOTER -->
+    <script src="./app.js"></script>
   </body>
 </html>
